@@ -704,3 +704,140 @@ section .content {
     box-sizing: border-box;
     width: 244px;
 }
+
+footer {
+    height: 445px;
+}
+
+footer .part1 {
+    background-color: #F7F7F7;
+    height: 220px;
+}
+
+footer .part2 {
+    background-color: #1C1F21;
+    height: 225px;
+}
+
+footer .part1>div {
+    padding-top: 32px
+}
+
+footer .part1>div>ul {
+    padding-bottom: 40px;
+}
+
+footer .part1>div>ul>li{
+    box-sizing: border-box;
+    border-right: 1px solid #1C1F21;
+    line-height: 28px;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 26px;
+    float: left;
+}
+
+footer .part1>div>ul>li>a {
+    color: #1C1F21;
+    font-weight: bold;
+}
+
+footer .part1>div>ul>li:first-child {
+    padding-left: 0
+}
+
+footer .part1>div>ul>li:last-child {
+    border-right: 0px;
+    padding-right: 0px;
+}
+
+footer .part1>div>ol>li {
+    width: 364px;
+    float: left;
+    margin-right: 30px;
+    height: 76px;
+}
+
+footer .part1>div>ol>li>div.icon{
+    width: 60px;
+    height: 60px;
+    background-image: url('../assets/xuebi.png');
+    float: left;
+    margin-right: 15px;
+}
+
+footer .part1>div>ol>li>div.icon.first {
+    background-position: -37px -112px;
+    
+}
+
+footer .part1>div>ol>li>div.icon.second {
+    background-position: -103px -112px;
+}
+
+footer .part1>div>ol>li>dl {
+    float: left;
+    width: 289px;
+}
+
+footer .part1>div>ol>li>dl>dd {
+    font-size: 14px;
+    color: #1C1F21;
+    line-height: 22px;
+}
+footer .part1>div>ol>li>dl>dt {
+    font-size: 16px;
+    color: #1C1F21;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+footer .part2>div:first-child {
+    padding-top: 49px;
+    padding-bottom: 31px;
+}
+
+footer .part2>div:first-child>h1 {
+    font-size: 46px;
+    color: #FFFFFF;
+    line-height: 46px;
+    float: left;
+    margin-right: 21px;
+}
+
+footer .part2>div:first-child>p {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 22px;
+    float: left;
+    width: 532px;
+}
+
+footer .part2>div:last-child>ul>li {
+    padding: 0 14px;
+    border-right: 1px solid #fff;
+    float: left;
+}
+
+footer .part2>div:last-child>ul>li:first-child {
+    padding-left: 0;
+}
+
+footer .part2>div:last-child>ul>li:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+footer .part2>div:last-child>ul>li>a {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 14px;
+}
+
+footer .part2>div:last-child>p {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 22px;
+    margin-top: 8px;
+}
