@@ -235,7 +235,22 @@ header .banner {
     position: relative;
 }
 
-header .banner img {
+header .banner-container {
+    width: 100%;
+    min-width: 1366px;
+    overflow: hidden;
+}
+
+header .banner .banner-container>ul {
+    width: 600%;
+    transition: transform 0.5s linear 0s;
+}
+header .banner .banner-container>ul>li {
+    width: 16.666%;
+    float: left;
+}
+
+header .banner .banner-container>ul>li img {
     width: 100%;
     min-width: 1366px;
     vertical-align: middle;
