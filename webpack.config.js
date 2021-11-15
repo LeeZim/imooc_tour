@@ -1,19 +1,18 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const resolve = dir => path.resovle(__dirname, dir);
+const resolve = dir => path.resolve(__dirname, dir)
 
 module.exports = {
     mode: 'development',
     entry: {
-        index: './js/index.js',
-        list: './js/list.js'
+        index: './src/pages/index/index.js'
     },
     output: {
         path: resolve('dist'),
         filename:'js/[name].js'
     },
-    devtools: 'cheap-module-eval-source-map',
+    devtool: 'cheap-module-eval-source-map',
     resolve: {
         extensions: ['.js'],
         alias: {
@@ -22,7 +21,8 @@ module.exports = {
             images: resolve('src/assets/images'),
             styles: resolve('src/assets/styles'),
             components: resolve('src/components'),
-            pages: resolve('src/pages')
+            pages: resolve('src/pages'),
+            '@': resolve('src/')
         }
     },
     module: {

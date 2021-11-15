@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PingFangSC-Regular';
+    src: url(./font/PingFangRegular.otf);
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('./font/iconfont.ttf?t=1635593735787') format('truetype');
+}
