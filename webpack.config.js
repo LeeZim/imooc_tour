@@ -60,5 +60,8 @@ module.exports = {
             template: './src/pages/index/index.art',
             chunks: ['index']
         })
-    ]
+    ],
+    node: {
+        fs: 'empty'
+    }
 }

@@ -1,23 +1,43 @@
-.w1152 {
+/* 页芯 */
+.pageCore {
     width: 1152px;
-}
-
-.center {
     margin: 0 auto;
 }
 
-.db {
+[db] {
     display: block;
 }
 
-.dib {
+[dib] {
     display: inline-block;
 }
+
+[psr] {
+    position: relative;
+}
+
+[psa] {
+    position: absolute;
+}
+
 html {
     font-family: 'PingFangSC-Regular';
+    font-size: 14px;
+    color: #fff
 }
 
 a {
     text-decoration: none;
     font-family: 'PingFangSC-Regular';
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+}
+
+/* 清除浮动 */
+[clearfix]::after {
+    content: '';
+    display: table;
+    clear: both;
 }
