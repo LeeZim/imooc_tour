@@ -22,7 +22,8 @@ module.exports = {
             styles: resolve('src/assets/styles'),
             components: resolve('src/components'),
             pages: resolve('src/pages'),
-            '@': resolve('src/')
+            '@': resolve('src/'),
+            js: resolve('src/js')
         }
     },
     module: {

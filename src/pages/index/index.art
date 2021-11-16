@@ -10,5 +10,7 @@
 <body>
     <!-- 顶部黑色导航 -->
     {{ include '../../components/topbar/topbar.art'}}
+    <!-- 顶部绿色导航 -->
+    {{ include '../../components/main-nav/main-nav.art'}}
 </body>
 </html>

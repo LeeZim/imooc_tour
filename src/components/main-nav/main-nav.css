@@ -1,0 +1,75 @@
+.main-nav {
+    height: 40px;
+    background-color: #20BD9A;
+}
+
+.main-nav .pageCore>ul.mainNav {
+    padding: 11px 0;
+}
+
+.main-nav .pageCore>ul.mainNav>li {
+    float: left;
+    margin-right: 18px;
+}
+
+.main-nav .pageCore>ul.mainNav>li>a {
+    font-size: 16px;
+    line-height: 18px;
+    position: relative;
+}
+
+.main-nav .pageCore>ul.mainNav>li.main-nav-menu>a {
+    padding-right: 18px;
+    position: relative;
+    height: 25px;
+}
+.main-nav .pageCore>ul.mainNav>li.main-nav-menu>a::after {
+    content: '';
+    position: absolute;
+    background-image: url('images/css_sprites.png');
+    background-position: -98px -154px;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    right: 0;
+    transition: transform 0.2s linear 0s;
+}
+
+.main-nav .pageCore>ul.mainNav>li:hover>a::after {
+    transform: rotate(180deg);
+}
+
+.main-nav .pageCore>ul.mainNav>li:hover>a {
+    font-weight: bold;
+}
+
+/* 下拉菜单 */
+
+.main-nav .pageCore>ul.mainNav>li:hover dl {
+    background-color: #fff;
+    padding: 8px;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);
+}
+
+.main-nav .pageCore>ul.mainNav>li:hover dl::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main-nav .pageCore>ul.mainNav>li .main-nav-menu-dList>dt {
+    font-size: 14px;
+    color: #1C1F21;
+    line-height: 22px;
+    font-weight: bolder;
+}
+
+.main-nav .pageCore>ul.mainNav>li:hover .main-nav-menu-dList>dd>a {
+        color: #1C1F21
+}
+
+.main-nav .pageCore>ul.mainNav>li:hover .main-nav-menu-dList>dd {
+    float: left;
+    margin-right: 4px;
+} 
