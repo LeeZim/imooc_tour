@@ -50,6 +50,7 @@
     padding: 8px;
     position: absolute;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);
+    z-index: 999
 }
 
 .main-nav .pageCore>ul.mainNav>li:hover dl::after {

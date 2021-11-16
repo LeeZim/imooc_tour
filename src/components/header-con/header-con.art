@@ -1,0 +1,18 @@
+<div class="header-con">
+    <div class="pageCore">
+        <div class="header-search" clearfix>
+            <div class="logo">
+                <span>慕云游商城</span>
+            </div>
+            <div class="search-input" clearfix>
+                <input type="text" />
+                <input type="button" class="iconfont" value="&#xe67f;"/>
+            </div>
+        </div>
+    </div>
+    <div class="banner" psr>
+        <div id="carousel" clearfix>
+        </div>
+        {{include './components/banner-cover/banner-cover.art'}}
+    </div>
+</div>

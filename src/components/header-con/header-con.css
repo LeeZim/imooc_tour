@@ -1,0 +1,63 @@
+/* 搜索框 */
+
+.header-con>div.pageCore {
+    padding: 21px 0;
+}
+
+/* logo */
+.header-con .pageCore .header-search .logo {
+    float: left;
+    margin-right: 20px;
+}
+
+.header-con .pageCore .header-search .logo>span {
+    font-size: 24px;
+    line-height: 36px;
+    color: #20BD9A;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+/* 搜素框 按钮 */
+.header-con .pageCore .header-search .search-input {
+    padding: 3px 0;
+    float: left;
+}
+
+.header-con .pageCore .header-search .search-input input[type="text"]{
+    height: 28px;
+    width: 362px;
+    border: 1px solid #20BD9A;
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    padding-left: 10px;
+    float: left;
+}
+
+.header-con .pageCore .header-search .search-input input[type="button"] {
+    width: 32px;
+    height: 30px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #20BD9A;
+    background-color: #20BD9A;
+    float: left;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* 轮播图 */
+.header-con .banner {
+    min-width: 1152px;
+}
+
+.header-con .banner #carousel {
+    width: 600%;
+    transition: transform 0.5s linear 0s;
+}
+
+.header-con .banner #carousel img {
+    float: left;
+    width: 16.666%;
+}

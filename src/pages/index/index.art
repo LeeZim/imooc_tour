@@ -12,5 +12,7 @@
     {{ include '../../components/topbar/topbar.art'}}
     <!-- 顶部绿色导航 -->
     {{ include '../../components/main-nav/main-nav.art'}}
+    <!-- search + banner -->
+    {{ include '../../components/header-con/header-con.art'}}
 </body>
 </html>

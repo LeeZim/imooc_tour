@@ -51,6 +51,7 @@
     background-color: #fff;
     position: absolute;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);
+    z-index: 999
 }
 
 .topbar .pageCore ul.topbar_nav li.topbar_nav_menu .topbar_nav_menu_dlist>li>a {
