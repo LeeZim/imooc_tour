@@ -1,6 +1,6 @@
-<div class="banner-cover">
+<div id="banner-cover" class="banner-cover">
     <div class="pageCore">
-        <ul class="banner-cover-list">
+        <ul id="banner-cover-list" class="banner-cover-list">
 
         </ul>
     </div>

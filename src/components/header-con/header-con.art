@@ -1,4 +1,4 @@
-<div class="header-con">
+<div id="banner" class="header-con">
     <div class="pageCore">
         <div class="header-search" clearfix>
             <div class="logo">

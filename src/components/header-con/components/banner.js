@@ -15,14 +15,6 @@ class CarouselGenerator {
         }
         const firstChild = this._carousel.firstElementChild.cloneNode(true)
         this._carousel.appendChild(firstChild)
-
-        this._carousel.onmouseenter = () => {
-            this.stopScroll()
-        }
-
-        this._carousel.onmouseleave = () => {
-            this.startScroll()
-        }
     }
 
     _pageReset(index) {
@@ -39,6 +31,7 @@ class CarouselGenerator {
 
     startScroll() {
         const self = this
+        if (this._timeCounter) return
         this._timeCounter = setInterval(() => {
             if (self._index == (self._imgs.length + 1)) self._index = 1
             if (self._index == self._imgs.length) {
@@ -53,6 +46,7 @@ class CarouselGenerator {
 
     stopScroll() {
         clearInterval(this._timeCounter)
+        this._timeCounter = null
     }
 
 

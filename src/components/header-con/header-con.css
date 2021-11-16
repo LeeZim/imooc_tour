@@ -50,6 +50,7 @@
 /* 轮播图 */
 .header-con .banner {
     min-width: 1152px;
+    overflow: hidden;
 }
 
 .header-con .banner #carousel {

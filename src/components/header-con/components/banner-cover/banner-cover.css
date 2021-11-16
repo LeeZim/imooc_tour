@@ -10,5 +10,76 @@
 .banner-cover .pageCore ul.banner-cover-list {
     width: 296px;
     height: 100%;
+}
+
+.banner-cover .pageCore ul.banner-cover-list>li {
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
     background-color: rgba(28,31,33,.5);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.banner-cover .pageCore ul.banner-cover-list>li:hover {
+    background-color: rgba(28,31,33,.7);
+}
+
+.banner-cover .pageCore ul.banner-cover-list>li .banner-list-icon {
+    width: 24px;
+    height: 24px;
+    background-clip: content-box;
+    background-image: url('images/css_sprites.png') ;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 12px
+}
+
+.banner-cover .pageCore ul.banner-cover-list>li>dl {
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    left: 42px
+}
+.banner-cover .pageCore ul.banner-cover-list>li>dl::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.banner-cover .pageCore ul.banner-cover-list>li>dl>dt {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.banner-cover .pageCore ul.banner-cover-list>li>dl>dd {
+    font-size: 14px;
+    line-height: 22px;
+    float: left;
+    margin-right: 6px;
+}
+
+.banner-cover .pageCore ul.banner-cover-list>li>div.afterArrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 9px;
+    top: 50%;
+    margin-top: -12px;
+}
+
+.banner-cover .pageCore ul.banner-cover-list>li>div.afterArrow::before {
+    content:'';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    position: absolute;
+    top:50%;
+    margin-top: -5px;
+    left: 50%;
+    margin-left: -6px;
+    transform: rotate(45deg);
 }
