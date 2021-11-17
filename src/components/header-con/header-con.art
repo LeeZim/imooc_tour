@@ -12,6 +12,9 @@
     </div>
     <div class="banner" psr>
         <div id="carousel" clearfix>
+            <!-- {{each imgs}}
+                <img src="images/{{$value}}" alt="">
+            {{/each}} -->
         </div>
         {{include './components/banner-cover/banner-cover.art'}}
     </div>

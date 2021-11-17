@@ -51,6 +51,7 @@
 .header-con .banner {
     min-width: 1152px;
     overflow: hidden;
+    position: relative;
 }
 
 .header-con .banner #carousel {
@@ -61,4 +62,26 @@
 .header-con .banner #carousel img {
     float: left;
     width: 16.666%;
+}
+
+.header-con .banner #carousel .dotSelector {
+    position: absolute;
+    height: 5px;
+    bottom: 10px;
+    left: 50%;
+    z-index: 999;
+}
+
+.header-con .banner #carousel .dotSelector::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header-con .banner #carousel .dotSelector div {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
 }

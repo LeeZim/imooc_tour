@@ -1,0 +1,27 @@
+.pageCore {
+    margin: 0 auto;
+    min-width: 1152px;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+li {
+    list-style: none;
+}
+
+.slider-item {
+    float: left;
+}
+
+.slider-item img {
+    width: 100%;
+}
+
+.slider-animation {
+    transition-property: transform;
+    transition-duration: 0ms;
+}
