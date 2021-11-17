@@ -1,10 +1,13 @@
 import './banner-cover.css'
 import banner_cover_data from './banner-cover.json'
+import InnerListGenerator from './innerList'
 
 const { data } = banner_cover_data
 const bannerList = document.getElementById('banner-cover-list')
-for (const item of data) {
+
+for (const [index, item] of data.entries()) {
     const li = document.createElement('li')
+    li.setAttribute('data-innerIndex', index)
     li.style.maxHeight = `16.6667%`
     li.style.height = `${100 / data.length}%`
     let liIcon = document.createElement('div')
@@ -21,4 +24,18 @@ for (const item of data) {
     afterArrow.className = 'afterArrow'
     li.appendChild(afterArrow)
     bannerList.appendChild(li)
+}
+
+const innerList = new InnerListGenerator(data, 'banner-cover-innerList')
+
+bannerList.onmouseover = (e) => {
+    if(e.target.tagName.toLowerCase() == 'li') {
+        const index = e.target.getAttribute('data-innerIndex')
+        innerList.loadList(index)
+        innerList.show()
+    }
+}
+
+document.getElementById('cover-controller').onmouseleave = () => {
+    innerList.hidden()
 }
